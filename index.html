@@ -353,6 +353,18 @@ html { scroll-behavior: smooth; }
       <p class="eyebrow">Character file · .fch · Valheim 1.0</p>
       <h1>Valheim Block Planner</h1>
       <p class="lede">Drop a character file to see what you can block and parry, plus your skills, gear and stats in plain language. Read-only: the file is read in this tab, never uploaded and never changed.</p>
+       <details class="how" style="overflow-wrap:anywhere">
+        <summary>Character on Steam Cloud? Move it to local first</summary>
+        <ol>
+          <li>Launch Valheim and go to the character select screen.</li>
+          <li>Click <strong>Manage Saves</strong>.</li>
+          <li>Open the <strong>Characters</strong> tab.</li>
+          <li>Pick the character with the cloud icon next to it.</li>
+          <li>Click <strong>Move to Local</strong>.</li>
+          <li>Exit the game. The character is now in <code>%USERPROFILE%\AppData\LocalLow\IronGate\Valheim\characters_local</code></li>
+        </ol>
+        <p class="note">Or skip this: Steam keeps cloud saves in <code>Steam\userdata\&lt;your Steam ID&gt;\892970\remote\characters</code>, and you can drop the .fch from there too.</p>
+      </details>
     </div>
     <label class="drop" id="drop" for="file">
       <input type="file" id="file" accept=".fch,.old">

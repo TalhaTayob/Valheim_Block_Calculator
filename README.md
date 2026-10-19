@@ -12,7 +12,7 @@ Drop your character file on the page. It reads your shield, armour, Blocking ski
   - whether your block holds, you get staggered, or your guard breaks
   - how much health you lose
   - the max health you'd need to take it cleanly
-- **Planner:** try other shields, armour, Blocking skill levels, max health, meads and boss powers before you craft or grind anything.
+- **Planner:** try other shields, armour, Blocking skill levels, max health, meads and boss powers before you craft or grind anything. Filter the gear lists by the biome the gear comes from, or search them by name.
 - **Conditions:** combat difficulty (Very easy to Very hard), enemy stars, and multiplayer scaling for players nearby.
 - **Character overview:** skills, inventory, stats, discoveries, and what your file records about cheats and achievement tracking.
 
@@ -23,7 +23,7 @@ Drop your character file on the page. It reads your shield, armour, Blocking ski
    ```
    %USERPROFILE%\AppData\LocalLow\IronGate\Valheim\characters_local
    ```
-   Steam Cloud saves are in `<Steam folder>\userdata\<your Steam ID>\892970\remote\characters`.
+   Steam Cloud saves are in `<Steam folder>\userdata\<your Steam ID>\892970\remote\characters`. You can open those directly, or move the character to local in the game first.
 3. Open the **Block & parry** tab.
 
 You don't need a save to use it: the page opens with an example character, and the Planner works on its own.
@@ -34,10 +34,11 @@ Everything runs in your browser. Your file is never uploaded, and the page never
 
 ## How the numbers are worked out
 
-- **Enemy damage** is scaled by combat difficulty, enemy stars and players nearby.
+- **Enemy damage** is scaled by combat difficulty, enemy stars and players nearby. A few hits, like death explosions and shockwaves, don't scale with stars.
 - **Block power** is your shield's block armour at its level, plus 0.5% per Blocking skill point. A parry multiplies it by the shield's parry bonus.
 - **Blocking reduces a hit the same way armour does.** Blunt, slash, pierce and lightning damage that gets through fills your stagger bar, which holds 40% of your max health.
 - **What gets through** then goes through your resistances and body armour.
+- **Gear biomes** come from the materials in each item's recipe. Troll leather counts as Black Forest, for example, and Wolf gear as Mountains.
 
 The page's "How this is worked out" section has the details.
 
@@ -46,10 +47,14 @@ The page's "How this is worked out" section has the details.
 - Stamina isn't modelled.
 - Damage shown is the strongest roll of each hit.
 - Numbers match Valheim 1.0 (patch 1.0.20) and may drift after future patches.
+- The Deep North Greydwarf variants and Fader's summoned helpers couldn't be checked against the wiki.
 
-## Credits
+Spotted a wrong number? Open an issue with the enemy, the attack and where you saw the correct value.
 
-- **Game data:** enemy attacks, shields and armour come from [kirilloid/valheim](https://github.com/kirilloid/valheim) by kirilloid, the data behind [valheim.kirilloid.ru](https://valheim.kirilloid.ru/). Many thanks.
+## Sources and credits
+
+- **Game data:** enemy attacks, shields, armour and recipes come from [kirilloid/valheim](https://github.com/kirilloid/valheim) by kirilloid, the data behind [valheim.kirilloid.ru](https://valheim.kirilloid.ru/). Many thanks.
+- **Enemy attack corrections:** every enemy was checked against the [Valheim Wiki](https://valheim.weirdgloop.org/) in October 2026. Where they differed, the wiki's values are used. That covers 15 enemies, including Stone Golem, Fader, Kall Fimbulbringer and Krigen.
 - **Blocking, parry and stagger rules:** the [Valheim Wiki](https://valheim.weirdgloop.org/w/Blocking) and [valheim.tools](https://www.valheim.tools/guides/combat), checked against the order of operations in the [Stagger Scaler](https://github.com/Babrushka/Stagger-Scaler) mod.
 
 ## Legal

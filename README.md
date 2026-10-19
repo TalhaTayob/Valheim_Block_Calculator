@@ -2,7 +2,7 @@
 
 See which enemy attacks you can block or parry in Valheim, using your own character.
 
-**Live page:** https://YOUR-USERNAME.github.io/YOUR-REPO/
+**Live page:** [https://talhatayob.github.io/Valheim_Block_Calculator/](https://talhatayob.github.io/Valheim_Block_Calculator/)
 
 Drop your character file on the page. It reads your shield, armour, Blocking skill and max health, then shows every enemy attack in the game with what happens when you take it unblocked, blocked or parried.
 
